@@ -1,0 +1,885 @@
+@charset "UTF-8";
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #1F6EAD;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #13456c;
+    color: white; }
+  /* line 18, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/extends/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 22, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 26, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 30, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 34, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 38, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 50, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #1F6EAD;
+  text-decoration: none; }
+  /* line 55, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #13456c; }
+  /* line 59, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #13456c;
+    outline: none; }
+
+/* line 65, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 73, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 79, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 86, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 90, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #1F6EAD;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(27, 96, 151, 0.7);
+    outline: none; }
+
+/* line 55, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 69, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 74, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 20, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 2, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+header.navigation {
+  background-color: #1F6EAD;
+  border-bottom: 1px rgba(31, 110, 173, 0.9);
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 27, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 34, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 0.5em; }
+    /* line 40, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: .8em 0; }
+  /* line 46, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .alignleft {
+    float: left; }
+  /* line 49, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .alignright {
+    float: right; }
+  /* line 55, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 55, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 70, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation .navigation-menu-button:hover {
+      color: black; }
+  /* line 77, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .nav {
+    z-index: 9999999;
+    float: right; }
+    @media screen and (min-width: 53.75em) {
+      /* line 77, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation .nav {
+        float: left; } }
+  /* line 85, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation ul#navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 85, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 104, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation ul li.nav-link {
+    background: #1F6EAD;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 104, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 124, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation ul li.nav-link ul li.alignright {
+      float: right;
+      background: #1F6EAD;
+      display: block;
+      line-height: 60px;
+      overflow: hidden;
+      padding-right: .8em;
+      text-align: right;
+      width: 100%;
+      z-index: 9999; }
+      @media screen and (min-width: 53.75em) {
+        /* line 124, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+        header.navigation ul li.nav-link ul li.alignright {
+          background: transparent;
+          display: inline;
+          line-height: 60px;
+          text-decoration: none;
+          width: auto; } }
+    /* line 145, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation ul li.nav-link a {
+      color: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      font-weight: 400; }
+      @media screen and (min-width: 53.75em) {
+        /* line 145, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 154, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link a:hover {
+        color: black; }
+  /* line 160, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 167, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 167, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 174, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 178, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 182, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 186, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: rgba(0, 0, 0, 0.7); }
+  /* line 193, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 197, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more a {
+      padding-right: .8em; }
+    /* line 201, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 201, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 209, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 217, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 193, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation li.more {
+        padding-right: .8em;
+        position: relative; } }
+  /* line 227, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 227, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 237, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 244, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 244, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 251, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 256, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: .7em; } }
+      /* line 263, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      header.navigation ul.submenu li a {
+        background-color: #1d66a0;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 263, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+          header.navigation ul.submenu li a {
+            background-color: #1F6EAD;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+
+/* line 281, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.hero {
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/31349/1237790/j5PpksbboTfjUu0/blue_wave-36.png"), -webkit-linear-gradient(10deg, #1F6EAD, #1F6EAD), no-repeat #1F6EAD scroll;
+  background: url("https://s3.amazonaws.com/uploads.hipchat.com/31349/1237790/j5PpksbboTfjUu0/blue_wave-36.png"), linear-gradient(10deg, #1F6EAD, #1F6EAD), no-repeat #1F6EAD scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+  /* line 296, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .hero .hero-logo img {
+    height: 3em;
+    margin-bottom: 2.5em; }
+  /* line 301, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .hero .hero-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    margin: auto;
+    text-align: center;
+    color: white; }
+    /* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .hero .hero-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .hero .hero-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 311, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .hero .hero-inner .hero-copy {
+      text-align: center; }
+      /* line 314, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .hero .hero-inner .hero-copy h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 5em;
+        font-weight: 200; }
+      /* line 320, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .hero .hero-inner .hero-copy p {
+        font-family: 'Oswald', sans-serif;
+        margin: auto;
+        font-weight: 200;
+        line-height: 1.4em;
+        color: black; }
+        @media screen and (min-width: 53.75em) {
+          /* line 320, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+          .hero .hero-inner .hero-copy p {
+            font-size: 1.1em;
+            max-width: 50%; } }
+
+/* line 340, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.side-image {
+  background: #F9F9F9; }
+  @media screen and (min-width: 53.75em) {
+    /* line 340, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .side-image {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      /* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+      .side-image:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  /* line 347, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .side-image .images-wrapper {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background-color: #B5EBEB;
+    border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+    background-size: cover;
+    display: block;
+    min-height: 12em;
+    padding: 3em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 347, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .side-image .images-wrapper {
+        display: table-cell;
+        width: 33.33333%;
+        background-position: bottom;
+        background-size: cover;
+        border-right: 1px solid rgba(38, 74, 38, 0.2); } }
+  /* line 364, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .side-image .content {
+    display: table-cell;
+    width: 100%;
+    padding: 1em 1em 4em 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 364, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .side-image .content {
+        display: table-cell;
+        width: 66.66667%;
+        padding: 3em 4em 2em 6em; } }
+  /* line 375, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .side-image .content h4 {
+    background: #5DAC5D;
+    color: white;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+    padding: 3px 8px;
+    text-transform: uppercase; }
+  /* line 386, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .side-image .content p {
+    color: gray;
+    margin-bottom: 3em; }
+  /* line 391, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .side-image .content button {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e3e3e3);
+    background-image: linear-gradient(white, #e3e3e3);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    border: 1px solid #dfd8d8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e5e0e0);
+    background-image: linear-gradient(white, #e5e0e0);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    font-size: 1em;
+    outline: none; }
+    /* line 131, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+      background-image: linear-gradient(#f2f2f2, #dbdbdb); }
+    /* line 147, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dbdbdb;
+      box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
+    /* line 131, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+      background-image: linear-gradient(#f2f2f2, #ded8d8); }
+    /* line 147, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dfd8d8;
+      box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
+    /* line 51, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+
+/* line 15, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/bourbon/addons/_clearfix.scss */
+.grid-items:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 426, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.grid-items .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14em;
+  background: #3e6b8e;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  padding: 2em;
+  border-top: 0;
+  border-bottom: 9px solid white;
+  text-align: center;
+  cursor: pointer; }
+  @media screen and (min-width: 53.75em) {
+    /* line 426, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item {
+      width: 25%; } }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(1) {
+    background-color: #3e6b8e;
+    box-shadow: inset 0px 0px 1px 2px #2e506b; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(1):hover {
+      background-color: #2e506b;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(2) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(2):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(3) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(3):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(4) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(4):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(5) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(5):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(6) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(6):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 444, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(7) {
+    background-color: #1F6EAD;
+    box-shadow: inset 0px 0px 1px 2px #175382; }
+    /* line 448, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(7):hover {
+      background-color: #175382;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+/* line 458, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.grid-items .grid-item img {
+  display: block;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 1em; }
+/* line 465, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.grid-items .grid-item h1 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: .4em; }
+/* line 471, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.grid-items .grid-item p {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7); }
+  @media screen and (min-width: 40em) {
+    /* line 471, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .grid-items .grid-item p {
+      max-width: 70%; } }
+@media screen and (min-width: 53.75em) {
+  /* line 479, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item-big {
+    width: 100%; } }
+@media screen and (min-width: 40em) {
+  /* line 483, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item-big p {
+    max-width: 60%; } }
+@media screen and (min-width: 53.75em) {
+  /* line 489, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item-med {
+    width: 33.33333%; } }
+@media screen and (min-width: 40em) {
+  /* line 493, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .grid-items .grid-item-med p {
+    max-width: 60%; } }
+/* line 500, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.grid-items .grid-item-image {
+  background: url(/images/lake-transparent.png);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+/* line 532, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+.footer-2 {
+  background: #1f3547;
+  padding: 1.5em;
+  width: 100%; }
+  /* line 542, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 0em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 542, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 .footer-logo {
+        float: left;
+        margin-bottom: 0; } }
+  /* line 552, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 .footer-logo img {
+    height: 3em; }
+  /* line 556, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 ul {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 556, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 ul {
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 0; } }
+  /* line 565, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 ul li {
+    padding-right: 1em;
+    font-weight: 800; }
+    @media screen and (min-width: 53.75em) {
+      /* line 565, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 ul li {
+        display: inline;
+        text-align: left; } }
+  /* line 575, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 ul li a {
+    color: rgba(255, 255, 255, 0.4); }
+    /* line 578, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .footer-2 ul li a:hover {
+      color: white; }
+  @media screen and (min-width: 53.75em) {
+    /* line 583, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links {
+      float: right; } }
+  /* line 588, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 .footer-secondary-links li {
+    font-size: .8em;
+    font-weight: 400; }
+  /* line 593, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    margin-top: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 593, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social {
+        float: right;
+        margin-top: 0; } }
+    /* line 601, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links ul.footer-social li {
+      float: left;
+      font-size: 1em;
+      padding-right: .7em; }
+      /* line 606, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
+        padding-right: 0; }
+    /* line 611, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links ul.footer-social img {
+      opacity: .7;
+      height: 1.6em;
+      padding: 1px; }
+      /* line 616, /Users/jaredwilliams/ruby/lab3/paddle/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social img:hover {
+        opacity: 1; }
